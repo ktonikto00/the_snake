@@ -1,4 +1,4 @@
-"""Модуль классической игры «Изгиб Питона» (Змейка) на базе библиотеки Pygame."""
+"""Модуль классической игры «Изгиб Питона» на базе Pygame."""
 
 from random import choice, randint
 
@@ -158,9 +158,7 @@ def handle_keys(game_object):
 
 def main():
     """Основной игровой цикл."""
-    # Инициализация PyGame:
     pygame.init()
-    # Тут нужно создать экземпляры классов.
     snake = Snake()
     apple = Apple(occupied_positions=snake.positions)
 
@@ -185,3 +183,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+    
